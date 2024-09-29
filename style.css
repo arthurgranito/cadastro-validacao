@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #313131;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+form label{
+    font-size: 1.1rem;
+}
+
+form input{
+    width: 100%;
+    color: black;
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    height: 40px;
+}
+
+.input-field{
+    margin-bottom: 1rem;
+}
+
+form .erro{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: rgb(247, 89, 89);
+    display: none;
+}
+
+form button{
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(255, 183, 48);
+    cursor: pointer;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.input i{
+    color: black;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    form{
+        width: 30%;
+    }
+}

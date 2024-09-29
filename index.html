@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Cadastro com verificações | Arthur Granito</title>
+</head>
+
+<body>
+    <form id="form">
+        <h1>Cadastro</h1>
+
+        <label for="nomeUsuario">Nome de usuário:</label>
+        <div class="input-field">
+            <input type="text" name="nomeUsuario" id="nome-usuario">
+            <p class="erro" id="erroNome">Preencha com seu nome de usuário</p>
+        </div>
+
+        <label for="email">Email:</label>
+        <div class="input-field">
+            <input type="email" name="email" id="email">
+            <p class="erro" id="erroEmail">Preencha com seu email</p>
+        </div>
+
+        <label for="senha">Senha:</label>
+        <div class="input-field">
+            <div class="input" id="inputSenha">
+                <input type="password" name="senha" id="senha">
+                <i class="fa-regular fa-eye-slash" id="verSenha"></i>
+            </div>
+            <p class="erro" id="erroSenhaVazia">Preencha com sua senha</p>
+            <p class="erro" id="erroSenhaPequena">Sua senha precisa ter pelo menos 8 caracteres</p>
+        </div>
+
+        <label for="confirmar-senha">Confirme sua senha:</label>
+        <div class="input-field">
+            <div class="input" id="inputConfirmarSenha">
+                <input type="password" name="confirmar-senha" id="confirmar-senha">
+                <i class="fa-regular fa-eye-slash" id="verConfirmarSenha"></i>
+            </div>
+            <p class="erro" id="erroConfirmarSenha">As senhas não correspondem</p>
+        </div>
+
+
+        <button type="submit">Cadastrar-se</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
