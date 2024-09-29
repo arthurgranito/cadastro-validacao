@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
     if(inputsValidos){
         alert('Cadastrado com sucesso');
         form.reset();
-        window.open('https://copokent.vercel.app');
+        window.open('https://menu-responsivo-beryl.vercel.app');
     }
 })
 
